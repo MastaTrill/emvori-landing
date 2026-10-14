@@ -6,12 +6,19 @@
   <title>Emvori — Private by default. Actions wait for you.</title>
   <meta name="description" content="Independent AI workspace for answers, cited web research, and multi-step agent work. Anonymous chat. Approval-gated actions. Honest research that refuses thin evidence.">
   <style>
-    :root { --bg: #0f0f0e; --paper: #f4f1ea; --ink: #1a1a18; --stone: #8a8478; --accent: #c4b8a5; }
+    :root {
+      --bg: #0f0f0e;
+      --paper: #f4f1ea;
+      --ink: #1a1a18;
+      --stone: #8a8478;
+      --accent: #c4b8a5;
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--paper); line-height: 1.5; }
     .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
     header { padding: 1.5rem 0; border-bottom: 1px solid #2a2a28; display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-weight: 600; letter-spacing: 0.05em; font-size: 1.1rem; }
+    .logo { display: flex; align-items: center; font-weight: 600; letter-spacing: 0.05em; font-size: 1.1rem; }
+    .logo img { height: 32px; width: 32px; margin-right: 0.6rem; border-radius: 50%; }
     nav a { color: var(--stone); text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem; }
     nav a:hover { color: var(--paper); }
     .hero { padding: 5rem 0 3rem; text-align: center; }
@@ -35,24 +42,36 @@
 <body>
   <div class="container">
     <header>
-      <div class="logo">EMVORI</div>
+      <div class="logo"><img src="assets/logo.png" alt="Emvori">EMVORI</div>
       <nav>
         <a href="https://mastatrill.github.io/emvori-status/">Status</a>
         <a href="https://mastatrill.github.io/emvori-status/trust.html">Trust</a>
         <a href="https://mastatrill.github.io/emvori-status/plans.html">Plans</a>
       </nav>
     </header>
+
     <section class="hero">
       <h1>Private by default.<br>Actions wait for you.</h1>
       <p class="sub">Independent AI workspace for answers, cited web research, and multi-step agent work. Anonymous chat works without an account. External actions require your approval.</p>
       <a class="cta" href="https://emvori-native.onrender.com">Open workspace</a>
       <a class="cta secondary" href="https://mastatrill.github.io/emvori-status/">View status & trust</a>
     </section>
+
     <section class="features">
-      <div class="card"><h3>Chat</h3><p>Ask anything or attach a file. Auto, Fast, or Deep reasoning. Browser history stays local until you sign in.</p></div>
-      <div class="card"><h3>Research</h3><p>Fresh public-web sources with citations. Built for briefs and due diligence. Says so when evidence is thin — no invented citations.</p></div>
-      <div class="card"><h3>Agent</h3><p>Multi-step help with an approval gate. Plans and drafts. Does not send mail or take external actions until you approve.</p></div>
+      <div class="card">
+        <h3>Chat</h3>
+        <p>Ask anything or attach a file. Auto, Fast, or Deep reasoning. Browser history stays local until you sign in.</p>
+      </div>
+      <div class="card">
+        <h3>Research</h3>
+        <p>Fresh public-web sources with citations. Built for briefs and due diligence. Says so when evidence is thin — no invented citations.</p>
+      </div>
+      <div class="card">
+        <h3>Agent</h3>
+        <p>Multi-step help with an approval gate. Plans and drafts. Does not send mail or take external actions until you approve.</p>
+      </div>
     </section>
+
     <section class="trust">
       <h2 style="margin-bottom: 1rem;">What stays private</h2>
       <ul style="color: var(--stone); padding-left: 1.25rem;">
@@ -64,11 +83,14 @@
       </ul>
       <p style="margin-top: 1rem;"><a href="https://mastatrill.github.io/emvori-status/trust.html">Full trust center →</a></p>
     </section>
+
     <section class="plans">
       <h2 style="margin-bottom: 1rem;">Public plan limits</h2>
       <p style="color: var(--stone); margin-bottom: 1rem;">Server-enforced daily allowances. Remaining counts after sign-in reset each UTC day.</p>
       <table>
-        <thead><tr><th>Plan</th><th>Chat / Research / Agent</th><th>Memory & goals</th><th>Notes</th></tr></thead>
+        <thead>
+          <tr><th>Plan</th><th>Chat / Research / Agent</th><th>Memory & goals</th><th>Notes</th></tr>
+        </thead>
         <tbody>
           <tr><td><strong>Free</strong> $0</td><td>20 / 3 / 1 (4 steps)</td><td>10 · 5</td><td>Deep preview only. No Gmail drafts.</td></tr>
           <tr><td><strong>Pro</strong> $20/mo</td><td>250 / 40 / 20 (12 steps)</td><td>500 · 100</td><td>Full Deep, Gmail drafts, Operator after approval.</td></tr>
@@ -77,6 +99,7 @@
       </table>
       <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--stone);"><a href="https://mastatrill.github.io/emvori-status/plans.html">Full plans page →</a></p>
     </section>
+
     <footer>
       Emvori is not an Aetheron token surface. <code>emvori.ai</code> is not claimed live until registry and DNS are verified.<br>
       Status: <a href="https://mastatrill.github.io/emvori-status/">mastatrill.github.io/emvori-status</a> · Support: support.emvori@gmail.com
